@@ -3,12 +3,6 @@
 """
   Author: Lynch
 """
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-"""
-  Author: Lynch
-"""
-
 
 class lnode(object):
     def __init__(self,data):
