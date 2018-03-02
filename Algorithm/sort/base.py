@@ -9,10 +9,10 @@ class baseSort(object):
     def __init__(self,data):
         self.data = data
 
-    def binanrySort(self):
-
-        pass
 
     def quicklySort(self):
-        pass
+
+        tag = self.data[0]
+        for i in self.data:
+            pass
 

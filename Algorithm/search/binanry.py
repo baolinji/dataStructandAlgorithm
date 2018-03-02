@@ -54,12 +54,14 @@ def binanrySearch3(value,target,low,high):
     pass
 
 
-
 def insertValueSearch(value,target):
+
+
+
     pass
 
-if __name__ =="__main__":
 
+if __name__ =="__main__":
 
     data = [1,2,4,9,10,11,13]
     target = 6
