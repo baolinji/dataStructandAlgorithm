@@ -68,26 +68,32 @@ class Tree():
             print root.value
 
 
-    def insert(self,data):
+    def insert(self,root,data):
+        if root.lchild is None:
+            root.lchild = node(data)
 
         pass
 
 
-    def sTree(self,target):
-        """
-        0:;
-        1:;
-        2:;
-        :param type: 
-        :return: 
-        """
+    def sTree(self,root,target):
+
         if self.root is None:
-            return
-        if self.root.value> target:
             pass
+        if self.root.value> target:
+            self.sTree(self.root.lchild,target)
+        if self.root.value< target:
+            self.sTree(self.root.rchild,target)
+
+
+
+
 
 if __name__ == "__main__":
     tree = Tree()
-    data = [1,2,3,4,5,6,'#',12,3,4,5,'#',12,4,3,4,'#']
-    tree.add_node(data)
+    # data = [1,2,3,4,5,6,12,3,4,5,12,4,3,4]
+    # tree.add_node(data)
+
+    temp =[1,2,3,4,5,6,7,8,9]
+    for i in temp:
+        tree.sTree(tree.root,i)
     print 1
